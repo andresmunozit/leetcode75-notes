@@ -1,0 +1,12 @@
+{
+  "name": "1071-greatest-common-divisor-of-strings",
+  "version": "1.0.0",
+  "description": "Given a string `s`, reverse only all the vowels in the string and return it.",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC"
+}
