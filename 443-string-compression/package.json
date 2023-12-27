@@ -1,0 +1,14 @@
+{
+  "name": "443-string-compression",
+  "version": "1.0.0",
+  "description": "Given an array of characters `chars`, compress it using the following algorithm:",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js",
+    "debug": "node --inspect-brk index.js",
+    "test": "node test.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC"
+}
