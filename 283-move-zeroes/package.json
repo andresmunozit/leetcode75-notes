@@ -1,0 +1,14 @@
+{
+  "name": "283-move-zeroes",
+  "version": "1.0.0",
+  "description": "Given an integer array `nums`, move all 0's to the end of it while maintaining the relative order of the non-zero elements.",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js",
+    "debug": "node --inspect-brk index.js",
+    "test": "node test.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC"
+}
