@@ -1,0 +1,14 @@
+{
+  "name": "1679-max-number-of-k-sum-pairs",
+  "version": "1.0.0",
+  "description": "Given an integer array `nums` and an integer `k`, the task is to find the maximum number of operations where each operation consists of removing a pair of numbers from the array that add up to `k`.",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js",
+    "debug": "node --inspect-brk index.js",
+    "test": "node test.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC"
+}

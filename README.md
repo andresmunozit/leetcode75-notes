@@ -17,11 +17,16 @@ You can use the following scripts on each exercise:
 {
   // ...
   "scripts": {
-    "start": "node index.js",               // Starts the program
-    "debug": "node --inspect-brk index.js", // Starts the program in debug mode
-    "test": "node test.js"                  // Run the test suite for this exercise
+    "start": "node index.js",
+    "debug": "node --inspect-brk index.js",
+    "test": "node test.js"
   },
   // ...
 }
 
 ```
+
+Where:
+- `start`: Starts the program
+- `debug`: Starts the program in debug mode
+- `test`: Run the test suite for this exercise
