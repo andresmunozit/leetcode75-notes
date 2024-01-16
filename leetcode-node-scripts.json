@@ -1,0 +1,5 @@
+{
+  "start": "node index.js",
+  "debug": "node --inspect-brk index.js",
+  "test": "node test.js"
+}

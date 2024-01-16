@@ -14,14 +14,11 @@ $ tree 283-move-zeroes
 ## `package.json` scripts
 You can use the following scripts on each exercise:
 ```json
+// leetcode-node-scripts.json
 {
-  // ...
-  "scripts": {
-    "start": "node index.js",
-    "debug": "node --inspect-brk index.js",
-    "test": "node test.js"
-  },
-  // ...
+  "start": "node index.js",
+  "debug": "node --inspect-brk index.js",
+  "test": "node test.js"
 }
 
 ```
@@ -30,3 +27,12 @@ Where:
 - `start`: Starts the program
 - `debug`: Starts the program in debug mode
 - `test`: Run the test suite for this exercise
+
+### Populating Automatically the `scripts` Key of `package.json` files
+Execute the following script, in this example the `package.json` file has been created beforehand
+inside the directory `./1004-max-consecutive-ones-iii` using `npm init -y`:
+```sh
+# Execute from the repository root
+$ ./add-scripts.sh ./1004-max-consecutive-ones-iii/package.json
+
+```
