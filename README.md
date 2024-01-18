@@ -2,8 +2,8 @@
 Exercises taken from the Leetcode 75 interview problem compilation. Each exercise folder has the
 following files:
 ```sh
-$ tree 283-move-zeroes 
-283-move-zeroes     # Exercise name
+$ tree ,<exercise-name> 
+,<exercise-name>
 ├── index.js        # Solution implementation
 ├── package.json    # Contains execution scripts
 ├── README.md       # Problem description
@@ -11,10 +11,26 @@ $ tree 283-move-zeroes
 
 ```
 
-## `package.json` scripts
-You can use the following scripts on each exercise:
+## Usage
+To streamline the setup process for each exercise, you can automatically inject the common scripts
+defined in `leetcode-node-scripts.json` into the `package.json` of each exercise directory using the
+`add-scripts.sh` bash script.
+
+### Injecting Scripts Automatically
+1. Ensure you have a `package.json` file in your exercise directory (create one with `npm init -y`
+if necessary).
+2. Use the `add-scripts.sh` script to inject the scripts from `leetcode-node-scripts.json` into your
+`package.json`:
+
+```sh
+# Execute from the repository root
+$ ./add-scripts.sh <path-to-exercise>/package.json
+
+```
+
+After running the script, your package.json will include the following scripts from 
+`leetcode-node-scripts.json`:
 ```json
-// leetcode-node-scripts.json
 {
   "start": "node index.js",
   "debug": "node --inspect-brk index.js",
@@ -23,16 +39,10 @@ You can use the following scripts on each exercise:
 
 ```
 
-Where:
-- `start`: Starts the program
-- `debug`: Starts the program in debug mode
-- `test`: Run the test suite for this exercise
-
-### Populating Automatically the `scripts` Key of `package.json` files
-Execute the following script, in this example the `package.json` file has been created beforehand
-inside the directory `./1004-max-consecutive-ones-iii` using `npm init -y`:
-```sh
-# Execute from the repository root
-$ ./add-scripts.sh ./1004-max-consecutive-ones-iii/package.json
-
-```
+### Understanding the Scripts
+- `start`: Runs the `index.js` file to start the program. Use this when you want to run you
+ solution.
+- `debug`: Starts the program in debug mode with `--inspect-brk`, allowing you to attach a debugger
+and step through the code.
+- `test`: Runs the `test.js` file to execute all test cases associated with the exercise, ensuring
+your solution meets the specified requirements.
