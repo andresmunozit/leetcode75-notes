@@ -1,0 +1,14 @@
+{
+  "name": "1207-unique-numbers-of-occurrences",
+  "version": "1.0.0",
+  "description": "Given an array of integers `arr`, return `true` if the number of occurrences of each value in the array is unique or `false` otherwise.",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js",
+    "debug": "node --inspect-brk index.js",
+    "test": "node test.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC"
+}
