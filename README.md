@@ -46,3 +46,15 @@ After running the script, your package.json will include the following scripts f
 and step through the code.
 - `test`: Runs the `test.js` file to execute all test cases associated with the exercise, ensuring
 your solution meets the specified requirements.
+
+## Support for Golang
+When implementing a golang solution the project tree structure changes:
+```
+000-example-exercise-name
+|---js
+    |--- (js structure defined above)
+|---go
+    |--- solution.go
+    |--- solution.test.go
+    
+```
