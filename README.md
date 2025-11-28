@@ -58,3 +58,10 @@ When implementing a golang solution the project tree structure changes:
     |--- solution.test.go
     
 ```
+
+## Knowledge Base
+There is a directory called knowledge base, this will contain a structured version of relevant
+pieces of knowledge learn during the problem resolution, for example binary search.
+
+Inside of the `kb` directory, there is a `README.md` file that is an index to other md files with
+specific pieces of information.
