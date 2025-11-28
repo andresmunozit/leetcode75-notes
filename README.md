@@ -51,11 +51,12 @@ your solution meets the specified requirements.
 When implementing a golang solution the project tree structure changes:
 ```
 000-example-exercise-name
-|---js
+|-- README.md (exercise description)
+|-- js (solution in js)
     |--- (js structure defined above)
-|---go
-    |--- solution.go
-    |--- solution.test.go
+|-- go (solution in go)
+    |-- solution.go
+    |-- solution.test.go
     
 ```
 
