@@ -4,8 +4,11 @@ function binarySearch(nums, target) {
     let left = 0;
     let right = nums.length - 1;
 
-    while (left < right) {
-        let m = Math.ceil((left + right)/2);
+    // There can be the case in which left == rigth, win which case both will contain the index
+    // of target
+    while (left <= right) {
+        // Integer division
+        let m = Math.floor((left + right)/2);
 
         if (nums[m] == target) {
             return m;
@@ -21,9 +24,9 @@ function binarySearch(nums, target) {
     return -1;
 }
 
+console.log(binarySearch(arr, 3)) // 1
 console.log(binarySearch(arr, 33)) // 5
 console.log(binarySearch(arr, 43)) // 8
-console.log(binarySearch(arr, 3)) // 1
 console.log(binarySearch(arr, 22)) // -1
 console.log(binarySearch(arr, -3)) // -1
 console.log(binarySearch(arr, 200)) // -1
