@@ -1,5 +1,5 @@
 const assert = require('assert')
-const { benchmark } = require('..//utils/index')
+const { benchmark } = require('../../utils/index')
 /**
  * @param {string} s
  * @return {string}
