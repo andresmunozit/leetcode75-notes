@@ -20,3 +20,14 @@ func SliceToLinkedList(slice []int) *ListNode {
 
 	return dummy.Next
 }
+
+func LinkedListToSlice(ll *ListNode) []int {
+	slice := []int{}
+
+	for ll != nil {
+		slice = append(slice, ll.Val)
+		ll = ll.Next
+	}
+
+	return slice
+}
