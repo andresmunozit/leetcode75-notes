@@ -1,4 +1,4 @@
-package helpersgod
+package helpersgo
 
 type ListNode struct {
 	Val  int
