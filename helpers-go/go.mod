@@ -1,4 +1,4 @@
-module github.com/andresmunozit/leetcode75-notes/helpersgo
+module github.com/andresmunozit/leetcode75-notes/helpers-go
 
 go 1.25.6
 
