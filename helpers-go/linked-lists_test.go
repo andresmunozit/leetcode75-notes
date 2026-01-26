@@ -1,4 +1,4 @@
-package helpersgo
+package helpersgod
 
 import (
 	"testing"
