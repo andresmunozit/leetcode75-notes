@@ -1,10 +1,5 @@
 package helpersgo
 
-type ListNode struct {
-	Val  int
-	Next *ListNode
-}
-
 func SliceToLinkedList(slice []int) *ListNode {
 	dummy := &ListNode{}
 
