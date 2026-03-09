@@ -56,7 +56,7 @@ When implementing a golang solution the project tree structure changes:
     |--- (js structure defined above)
 |-- go (solution in go)
     |-- solution.go
-    |-- solution.test.go
+    |-- solution_test.go
     
 ```
 
